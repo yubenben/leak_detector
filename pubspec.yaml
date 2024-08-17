@@ -1,19 +1,20 @@
 name: leak_detector
 description: Used to detect page memory leaks. You can use it to detect whether there is a memory leak in `Widget`, `Element` and `State`.
 version: 1.1.0
-author: Liu
 repository: https://github.com/liujiakuoyx/leak_detector.git
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
   flutter: ">=3.3.0"
 
+publish_to: none  # Add this line to mark the package as private
+
 dependencies:
   flutter:
     sdk: flutter
   sqflite: ^2.2.6
   path: ^1.8.2
-  vm_service: ^14.2.1
+  vm_service: ^11.2.0
 
 dev_dependencies:
   flutter_test:

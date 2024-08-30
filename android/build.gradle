@@ -38,6 +38,10 @@ android {
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
+
+    kotlin {
+        jvmToolchain(17)
+    }
     defaultConfig {
         minSdkVersion 16
     }
